@@ -1,13 +1,22 @@
-# AWS Backup Vault Terraform module for cross-account backup
+# AWS Cross-account Backup Terraform module
 
-[![CI/CD Pull Request](https://github.com/nhs-england-tools/terraform-aws-backup-vault/actions/workflows/cicd-1-pull-request.yaml/badge.svg)](https://github.com/nhs-england-tools/terraform-aws-backup-vault/actions/workflows/cicd-1-pull-request.yaml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=terraform-aws-backup-vault&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=terraform-aws-backup-vault)
+[![CI/CD Pull Request](https://github.com/nhs-england-tools/terraform-aws-cross-account-backup/actions/workflows/cicd-1-pull-request.yaml/badge.svg)](https://github.com/nhs-england-tools/terraform-aws-cross-account-backup/actions/workflows/cicd-1-pull-request.yaml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=terraform-aws-cross-account-backup&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=terraform-aws-cross-account-backup)
 
-This solution demonstrates how you can save time using Terraform to automate the deployment of your AWS Backup resources across accounts in your organization. Using this solution, you can centrally manage the deployment of AWS Backup resources, such as vaults, as well as backup policies, for all of your AWS Organizations accounts.
+This module is a blueprint for automating the deployment of AWS Backup resources across accounts for NHS England products. It not only incorporates good practice but also meets a policy requirement that mandates each service to ensure increased protection against ransomware attacks is implemented.
+
+The NHS England Backup Policy is supported by two additional documents – the Backup Standard and the Backup Design Pattern. These documents outline the backup requirements for NHS England services, also known as the [3-2-1 backup rule](https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world):
+
+- *"critical data is saved in multiple backup locations"*
+- *"at least 3 copies"*
+- *"on 2 separate devices"*
+- *"1 copy being stored off-site and offline or be immutable by online means"*
+- *"ensure information & systems can be restored after an incident including but not limited to ransomware and insider attack"*
+- *"in line with (RPO & RTO) Recovery Point Objectives and Recovery Time Objectives"*
 
 ## Table of Contents
 
-- [AWS Backup Vault Terraform module for cross-account backup](#aws-backup-vault-terraform-module-for-cross-account-backup)
+- [AWS Cross-account Backup Terraform module](#aws-cross-account-backup-terraform-module)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Getting started](#getting-started)
