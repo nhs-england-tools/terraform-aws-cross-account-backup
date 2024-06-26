@@ -13,10 +13,11 @@ cool-off period has been passed vault locking can not be removed.
 
 ## Module parameters
 
-|Name|Description|Type|Default setting|
-|client_name|The name of the client being served|string|-|
-|client_account|The AWS Account ID number being served|string|-|
-|lock_vault|Whether to lock the vault|bool|false|
+| Name           | Description                            | Type   | Default|
+|:---------------|:---------------------------------------|:------:|:------:|
+| client_name    | The name of the client being served    | string | -      |
+| client_account | The AWS Account ID number being served | string | -      |
+| lock_vault     | Whether to lock the vault              | bool   | false  | 
 
 ## Sample usage
 
