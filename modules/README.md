@@ -6,7 +6,6 @@ This document outlines the current solution in place to provide a "hardened" bac
 
 
 ## Solution overview
-Solution Diagram
 ![Solution diagram](./AWSBackupProjectTNG.png)
 
 
