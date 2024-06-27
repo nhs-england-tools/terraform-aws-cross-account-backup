@@ -17,12 +17,12 @@ variable "remote_vault_arn" {
 
 variable "local_lifecycle" {
   description = "The lifecycle used for local backup snaphots, in days"
-  type        = string
+  type        = number
 }
 
 variable "remote_lifecycle" {
   description = "The lifecycle used for remote backup snaphots, in days"
-  type        = string
+  type        = number
 }
 
 variable "backup_schedule" {
@@ -32,7 +32,7 @@ variable "backup_schedule" {
 }
 
 variable "use_env" {
-  description = ""
+  description = "Whether to back up by Environment or ALL in account"
   type        = bool
   default     = false
 }
