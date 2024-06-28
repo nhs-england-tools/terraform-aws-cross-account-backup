@@ -56,7 +56,7 @@ If this is deemed an essential feature further details, including costs, can be 
 
 ### Potential Future Improvements
 #### Reporting
-Reporting on backup is a currently available feature but has not been set up with the current solution. 
+Reporting on backup is a currently available feature but has not been set up with the current solution.
 
 It is strongly recommended that backup reporting should be done at the AWS Organisational level which will provide auditing of backups at a high and very independent level.
 
