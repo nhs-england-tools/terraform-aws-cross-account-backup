@@ -24,7 +24,7 @@ However we are actively using this system for the following asset types:
 
 #### Backup
 1. Each individual resource has its own CMK (Customer Managed encryption Key) which encrypts the resources data while at rest.
-2. On a regular basis a snapshot is taken off that resource and placed in the the Local AWS Vault as a recovery point (a.k.a. a backup) which encrypts it data with its own CMK.
+2. On a regular basis a snapshot is taken off that resource and placed in the Local AWS Vault as a recovery point (a.k.a. a backup) which encrypts it data with its own CMK.
 3. Once a local recovery point is in place in the local AWS Vault an AWS Backup "Copy Job" is automatically kicked off to make a copy of the recovery point into the Locked Remote Vault in the "Backup" AWS account.
 4. When the recovery point is placed in the Locked AWS Vault it re-encrypts the recovery point with its own CMK. At this time a lifecycle policy is assigned to the recovery point in the Locked Remote AWS Vault
 4. The recovery point can not be removed by ANYONE (including AWS support and the root user) until such time as the lifecycle expires the recovery point. See: https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html
