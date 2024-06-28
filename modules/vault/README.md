@@ -17,7 +17,7 @@ cool-off period has been passed vault locking can not be removed.
 |:---------------|:---------------------------------------|:------:|:------:|
 | client_name    | The name of the client being served    | string | -      |
 | client_account | The AWS Account ID number being served | string | -      |
-| lock_vault     | Whether to lock the vault              | bool   | false  | 
+| lock_vault     | Whether to lock the vault              | bool   | false  |
 
 ## Sample usage
 

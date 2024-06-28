@@ -1,4 +1,4 @@
-// Create a specific KMS key for the local backup vault and allow the remote 
+// Create a specific KMS key for the local backup vault and allow the remote
 // AWS account access to that key.
 
 resource "aws_kms_alias" "remote_backup_vault_key" {
@@ -18,7 +18,7 @@ resource "aws_kms_key" "remote_backup_vault" {
             "Sid": "Enable IAM User Permissions",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::${data.aws_caller_identity.current.id}:root" 
+                "AWS": "arn:aws:iam::${data.aws_caller_identity.current.id}:root"
             },
             "Action": "kms:*",
             "Resource": "*"

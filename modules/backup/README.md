@@ -6,7 +6,7 @@ This is a simple module to create a AWS Backup vault, KMS keys, Plans and automa
 
 The vault module should be ran first in the remote AWS account.
 
-**WARNING** Once a snaphshot has been placed intothe remote locked vault it can not be removed until the 
+**WARNING** Once a snaphshot has been placed intothe remote locked vault it can not be removed until the
  lifecycle duration has been exceeded.
 
 ## Module parameters
@@ -43,6 +43,6 @@ module "rss_prod_backup_vault" {
   remote_lifecycle   = 90
   backup_schedule    = "cron(15 11 ? * * *)"
   use_env            = true
-  environment        = "prod"  
+  environment        = "prod"
 }
 ```
